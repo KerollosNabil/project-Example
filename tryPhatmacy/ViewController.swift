@@ -177,9 +177,9 @@ class ViewController: UIViewController, ImageSlideshowDelegate, UICollectionView
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         cell.layer.shadowRadius = 1.0
-        cell.layer.shadowOpacity = 0.3
-//        cell.layer.masksToBounds = false
-//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
         if let serviceCell = cell as? ServiceCollectionViewCell {
             serviceCell.serviceImage.frame.size = CGSize(width: serviceCell.frame.width, height: serviceCell.frame.height * 0.7)
