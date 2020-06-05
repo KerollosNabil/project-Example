@@ -1,0 +1,6 @@
+framework module Pods_tryPhatmacy {
+  umbrella header "Pods-tryPhatmacy-umbrella.h"
+
+  export *
+  module * { export * }
+}

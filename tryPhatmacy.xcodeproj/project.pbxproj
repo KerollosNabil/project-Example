@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		0465025F2486E458003EFFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0465025D2486E458003EFFD1 /* LaunchScreen.storyboard */; };
 		0465026A2486E458003EFFD1 /* tryPhatmacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046502692486E458003EFFD1 /* tryPhatmacyTests.swift */; };
 		046502752486E458003EFFD1 /* tryPhatmacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046502742486E458003EFFD1 /* tryPhatmacyUITests.swift */; };
+		049BBC792489904500C045DE /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049BBC782489904500C045DE /* ServiceCollectionViewCell.swift */; };
+		04EEF1DA248A9D6C0052D609 /* ShadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF1D9248A9D6C0052D609 /* ShadedView.swift */; };
+		04EEF1DC248AA1B10052D609 /* imageSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEF1DB248AA1B10052D609 /* imageSlide.swift */; };
+		97D35202481C5E21FBE27C2D /* Pods_tryPhatmacy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93472061B92317BEC49CF423 /* Pods_tryPhatmacy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,12 @@
 		046502702486E458003EFFD1 /* tryPhatmacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tryPhatmacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046502742486E458003EFFD1 /* tryPhatmacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tryPhatmacyUITests.swift; sourceTree = "<group>"; };
 		046502762486E458003EFFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049BBC782489904500C045DE /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		04EEF1D9248A9D6C0052D609 /* ShadedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadedView.swift; sourceTree = "<group>"; };
+		04EEF1DB248AA1B10052D609 /* imageSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageSlide.swift; path = Pods/imageSlide.swift; sourceTree = SOURCE_ROOT; };
+		13D48702AA1CD5042C424AAB /* Pods-tryPhatmacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tryPhatmacy.debug.xcconfig"; path = "Target Support Files/Pods-tryPhatmacy/Pods-tryPhatmacy.debug.xcconfig"; sourceTree = "<group>"; };
+		424C7B468F4B0A8EC286CE92 /* Pods-tryPhatmacy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tryPhatmacy.release.xcconfig"; path = "Target Support Files/Pods-tryPhatmacy/Pods-tryPhatmacy.release.xcconfig"; sourceTree = "<group>"; };
+		93472061B92317BEC49CF423 /* Pods_tryPhatmacy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tryPhatmacy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D35202481C5E21FBE27C2D /* Pods_tryPhatmacy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,8 @@
 				046502682486E458003EFFD1 /* tryPhatmacyTests */,
 				046502732486E458003EFFD1 /* tryPhatmacyUITests */,
 				046502502486E454003EFFD1 /* Products */,
+				231ED1816A67572C0B963D85 /* Pods */,
+				8E12220A008622C41822EB44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +112,13 @@
 		046502512486E454003EFFD1 /* tryPhatmacy */ = {
 			isa = PBXGroup;
 			children = (
+				04EEF1DB248AA1B10052D609 /* imageSlide.swift */,
 				046502522486E454003EFFD1 /* AppDelegate.swift */,
 				046502542486E454003EFFD1 /* SceneDelegate.swift */,
 				046502562486E454003EFFD1 /* ViewController.swift */,
+				049BBC782489904500C045DE /* ServiceCollectionViewCell.swift */,
 				046502582486E454003EFFD1 /* Main.storyboard */,
+				04EEF1D9248A9D6C0052D609 /* ShadedView.swift */,
 				0465025B2486E458003EFFD1 /* Assets.xcassets */,
 				0465025D2486E458003EFFD1 /* LaunchScreen.storyboard */,
 				046502602486E458003EFFD1 /* Info.plist */,
@@ -128,6 +144,23 @@
 			path = tryPhatmacyUITests;
 			sourceTree = "<group>";
 		};
+		231ED1816A67572C0B963D85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13D48702AA1CD5042C424AAB /* Pods-tryPhatmacy.debug.xcconfig */,
+				424C7B468F4B0A8EC286CE92 /* Pods-tryPhatmacy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E12220A008622C41822EB44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93472061B92317BEC49CF423 /* Pods_tryPhatmacy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046502792486E458003EFFD1 /* Build configuration list for PBXNativeTarget "tryPhatmacy" */;
 			buildPhases = (
+				F809295E00A6D4E1C3DF4A28 /* [CP] Check Pods Manifest.lock */,
 				0465024B2486E454003EFFD1 /* Sources */,
 				0465024C2486E454003EFFD1 /* Frameworks */,
 				0465024D2486E454003EFFD1 /* Resources */,
+				2A58B14626C073F2CF068E25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +289,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A58B14626C073F2CF068E25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tryPhatmacy/Pods-tryPhatmacy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tryPhatmacy/Pods-tryPhatmacy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tryPhatmacy/Pods-tryPhatmacy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F809295E00A6D4E1C3DF4A28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tryPhatmacy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0465024B2486E454003EFFD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				046502572486E454003EFFD1 /* ViewController.swift in Sources */,
+				04EEF1DC248AA1B10052D609 /* imageSlide.swift in Sources */,
 				046502532486E454003EFFD1 /* AppDelegate.swift in Sources */,
+				049BBC792489904500C045DE /* ServiceCollectionViewCell.swift in Sources */,
+				04EEF1DA248A9D6C0052D609 /* ShadedView.swift in Sources */,
 				046502552486E454003EFFD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,11 +512,13 @@
 		};
 		0465027A2486E458003EFFD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D48702AA1CD5042C424AAB /* Pods-tryPhatmacy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8D4SVADJV4;
 				INFOPLIST_FILE = tryPhatmacy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +532,13 @@
 		};
 		0465027B2486E458003EFFD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424C7B468F4B0A8EC286CE92 /* Pods-tryPhatmacy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8D4SVADJV4;
 				INFOPLIST_FILE = tryPhatmacy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
