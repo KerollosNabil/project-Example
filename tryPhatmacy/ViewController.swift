@@ -62,6 +62,17 @@ class ViewController: UIViewController, ImageSlideshowDelegate, UICollectionView
         }
 
     }
+    
+    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {//for ibad
+        self.view.setNeedsLayout()
+        slideImage.clipsToBounds = true
+        imageSiderSetub()
+        navigationBarSetub()
+        setubLabels()
+        serviceCollectionView.backgroundColor = .clear
+        serviceCollectionView.reloadData()
+        print(view.frame)
+    }
     //vriavles
     var imageSlideModel = [ImageSlideModel]()
     var imgeSlideImages:[AlamofireSource] {
@@ -167,8 +178,8 @@ class ViewController: UIViewController, ImageSlideshowDelegate, UICollectionView
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         cell.layer.shadowRadius = 1.0
         cell.layer.shadowOpacity = 0.3
-        cell.layer.masksToBounds = false
-        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+//        cell.layer.masksToBounds = false
+//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
         if let serviceCell = cell as? ServiceCollectionViewCell {
             serviceCell.serviceImage.frame.size = CGSize(width: serviceCell.frame.width, height: serviceCell.frame.height * 0.7)
@@ -187,7 +198,7 @@ class ViewController: UIViewController, ImageSlideshowDelegate, UICollectionView
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: (collectionView.bounds.height*0.90)*(100/160), height: collectionView.bounds.height*0.90)
+        return CGSize(width: (collectionView.bounds.height*0.88)*(100/160), height: collectionView.bounds.height*0.88)
     }
 
 }
